@@ -150,7 +150,7 @@ def train(epochs, batch_size):
             psnr_v.append(sewar.psnr(x_train_hr[rand_nums[0]],generated_image,MAX=None))
             epochs_v.append(e)
             plt.plot(psnr_v,epochs_v)
-            plt.savefig('./metric' + 'progress%d.png'%e)
+            plt.savefig('./model' + 'progress%d.png'%e)
     
 
 
